@@ -1,12 +1,16 @@
-<app-quote>
-<h1> QUOTES </h1>
+
+<h1> Believe in yourself, and find ways to express yourself, and find the discipline to keep growing. </h1>
 <hr>
 
-<ul>
-    <div *ngFor='let quote of quotes'>
-        <li id="{{i}}">{{quote.name}} due on {{quote.completeDate|date|uppercase}}</li>
-        <button  (click)='toogleDetails(i)'>Toogle Details</button>
-        <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'completeQuote($event,i)'></app-quote-details>
-        </div>
-</ul>
-</app-quote>
+<div class="container">
+    <div class="row" *ngFor='let quote of quotes; let i=index'>
+        <p>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</p>
+        <div class="row">
+     <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button></div>
+        
+     <div class="row" *ngIf="quote.showDescription">
+     <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+     </div>
+    
+    </div>
+</div>

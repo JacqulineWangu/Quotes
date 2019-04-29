@@ -1,6 +1,8 @@
+<app-root>
 <h1> Quotes </h1>
 <p> My quote for today is {{quote}} </p>
 
 <ol>
-  <li *ngFor='let quote of quotes'>{{quote}}</li>
+  <li *ngFor='let quote of quotes'>{{quote.name}}</li>
 </ol>
+</app-root>

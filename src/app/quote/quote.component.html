@@ -7,7 +7,7 @@
             <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
         </div>    
         <div class="row" *ngIf="quote.showDescription">
-        <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-goal-details>
+        <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
     </div>
     
 </div>

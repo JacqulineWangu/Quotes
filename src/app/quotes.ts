@@ -1,3 +1,7 @@
-export class Quotes {
-    constructor(public id:number, public name:string){}
+export class Quote {
+    public showDescription:boolean
+    constructor(public id:number, public name:string,public description:string,public PostedDate:Date){
+        this.showDescription=false
+
+    }
 }

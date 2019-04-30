@@ -1,10 +1,4 @@
-<!-- <p>{{quote.description}}</p>
-<p>complete in {{quote.completeDate|dateCount}} days</p>
-<button class="btn btn-danger" (click) = 'quoteDelete(true)'> DELETE </button>
- -->
-
-
-
+<div [ngStyle]="box">
 <p>{{quote.author}}</p>
 <p>Published by <strong>{{quote.publisher}}</strong></p>
 <p><em>This quote was posted <strong>{{quote.completeDate|dateCount}} days ago</strong></em></p>
@@ -12,3 +6,4 @@
 <button id="unlike" type="button" name="button" (click)="unlike()">Dis-Like {{downvote}}</button>
 <br>
 <button class="btn btn-danger" (click)='quoteDelete(true)'> Delete</button>
+</div>

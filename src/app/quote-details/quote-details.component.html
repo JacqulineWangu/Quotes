@@ -2,8 +2,8 @@
 <p>{{quote.author}}</p>
 <p>Published by <strong>{{quote.publisher}}</strong></p>
 <p><em>This quote was posted <strong>{{quote.completeDate|dateCount}} days ago</strong></em></p>
-<button id="like" type="button" name="button" (click)="like()">Like {{upvote}}</button>
-<button id="unlike" type="button" name="button" (click)="unlike()">Dis-Like {{downvote}}</button>
+<button id="like" type="button" class="btn btn-success" name="button" (click)="like()">Like {{upvote}}</button>
+<button id="unlike" class="btn btn-danger" type="button" name="button" (click)="unlike()">Dis-Like {{downvote}}</button>
 <br>
 <button class="btn btn-danger" (click)='quoteDelete(true)'> Delete</button>
 </div>

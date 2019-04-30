@@ -9,13 +9,17 @@
 
 
 
-.quotess {
+#quotess {
   text-align: center;
   font-style: italic;
-  font-size: 150px;
-  line-height: 40rem;
+  font-size: 30px;
+  line-height: -10em;
   color: darkslategray;
   background-color: hotpink;
 }
 
+#formss {
+    background-color: lightcoral;
+    justify-content: space-around;
+}
 

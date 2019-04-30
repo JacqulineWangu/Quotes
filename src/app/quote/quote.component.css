@@ -1,15 +1,9 @@
 h1 {
     text-align: center;
-
-};
-
-
-
-.formss {
-    
-    float: left;
+color: goldenrod;
 }
 
-.book {
-   background-image: url('/images/book.jpeg')
+
+#book {
+   background-image: url('/home/jacquline/MORINGA-SCHOOL-PROJECTS/QUOTES/src/assets/images/book.jpeg')
 }

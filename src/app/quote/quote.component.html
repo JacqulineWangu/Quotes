@@ -7,6 +7,11 @@
 <div class="container">
       <div class="row">
         <div class="col-6" id="formss"> 
+
+<img src="assets/images/book.jpeg" alt="">
+<br>
+<hr>
+
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
         </div>
         <div class="col-6" id="quotess">
@@ -21,9 +26,14 @@
                 </div>
                 <div *ngIf="quote.showDescription">
                   <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+                  
                 </div>
               </div>
             </div>
+            <hr>
+                  <br>
+                  <img src="assets/images/images.jpeg" alt="">
+               
         </div>
       </div>
             

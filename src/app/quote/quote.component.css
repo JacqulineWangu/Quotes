@@ -9,3 +9,7 @@ h1 {
     
     float: left;
 }
+
+.book {
+   background-image: url('/images/book.jpeg')
+}

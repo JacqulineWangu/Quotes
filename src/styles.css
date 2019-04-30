@@ -2,16 +2,20 @@
 
 .btn:hover {
   background-color: purple;
-    width: 150px;
-    height: 50px;
-    
-  };
+  width: 150px;
+  height: 50px;
 
-  .quotess {
-    text-align: center;
-    font-style: italic;
-    font-size: 150px;
-    line-height: 40rem;
-    color: darkslategray;
-background-color: hotpink;
-};
+}
+
+
+
+.quotess {
+  text-align: center;
+  font-style: italic;
+  font-size: 150px;
+  line-height: 40rem;
+  color: darkslategray;
+  background-color: hotpink;
+}
+
+

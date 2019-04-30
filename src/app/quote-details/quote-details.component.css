@@ -1,14 +1,14 @@
-.like:hover{
-    color: aqua;
+.like:hover {
+  color: aqua;
 
 }
 
-h2{
-    color: chartreuse;
-    font-size: 20px;
+h2 {
+  color: chartreuse;
+  font-size: 20px;
 
 }
 
-.delete{
-align-items: flex-start;
+.delete {
+  align-items: flex-start;
 }

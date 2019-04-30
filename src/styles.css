@@ -2,11 +2,16 @@
 
 .btn:hover {
   background-color: purple;
-    width: 100px;
+    width: 150px;
     height: 50px;
     
-  }
+  };
 
- body {
-    /* background image: url(./images/book.jpeg); */
-} 
+  .quotess {
+    text-align: center;
+    font-style: italic;
+    font-size: 150px;
+    line-height: 40rem;
+    color: darkslategray;
+background-color: hotpink;
+};

@@ -6,5 +6,9 @@
 h2{
     color: chartreuse;
     font-size: 20px;
-    
+
+}
+
+.delete{
+align-items: flex-start;
 }

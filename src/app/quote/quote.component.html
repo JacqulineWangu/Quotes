@@ -1,21 +1,23 @@
 
 <body class="book">
-<h1> <strong></strong>QUOTES <strong></strong></h1>
-<strong><hr></strong>
-<br>
-
+<img id="bookimg" src="assets/images/book.jpeg" position=center>
+  <br>
+  
+<div class="color">
 <div class="container">
       <div class="row">
-        <div class="col-6" id="formss"> 
-
-<img src="assets/images/book.jpeg" alt="">
+        <div class="col-5" id="formss"> 
 <br>
-<hr>
+
 
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
         </div>
+
+
+
+
         <div class="col-6" id="quotess">
-           
+           <br>
             
             <div *ngFor='let quote of quotes;let i = index'>
               <div id="output">
@@ -30,10 +32,10 @@
                 </div>
               </div>
             </div>
-            <hr>
+           
                   <br>
-                  <img src="assets/images/images.jpeg" alt="">
-               
+                  <!-- <img src="assets/images/images.jpeg" alt="">
+                -->
         </div>
       </div>
             
@@ -41,4 +43,7 @@
            
 
           </div>
+        </div>
+        <footer class="text-center"><h2>"Quotes are amazing!"</h2> <br> <h4><em>Quote me on that</em></h4>
+        </footer>
 </body>

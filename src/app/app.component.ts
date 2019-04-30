@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
-import { Quotes } from './quotes'
+import { Quote } from './quote'
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    quotes = [
-      new Quotes(1,'watch','kill',new Date()),
-      new Quotes(2,'eat lunch','manace',new Date())
-    ];
+  
+  constructor() { }
 }

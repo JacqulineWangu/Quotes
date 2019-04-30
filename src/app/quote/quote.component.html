@@ -1,16 +1,20 @@
+    <div class="container">
+            <h1>QUOTES</h1>
+            
+            <div *ngFor='let quote of quotes;let i = index'>
+              <div id="output">
+                <p id="{{i}}">{{quote.name}} <br><strong>posted on {{quote.completeDate|date|uppercase}}</strong></p>
+                <br>
+                <div class="button">
+                  <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+                </div>
+                <div *ngIf="quote.showDescription">
+                  <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+                </div>
+              </div>
+            </div>
 
-<h1> Believe in yourself, and find ways to express yourself, and find the discipline to keep growing. </h1>
-<hr>
-
-<div class="container">
-    <div class="row" *ngFor='let quote of quotes; let i=index'>
-        <p>{{quote.name}} due on {{quote.completeDate|date|uppercase}}</p>
-        <div class="row">
-     <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button></div>
-        
-     <div class="row" *ngIf="quote.showDescription">
-     <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
-     </div>
-    
-    </div>
-</div>
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+            
+          </div>
+          
